@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlpineJS Counter Widget</title>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.7.1/dist/cdn.min.js" defer></script>
+    <style>
+        .counter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid">
+        <div class="counter" x-data="{ count: 0 }">
+            <p x-text="count"></p>
+            <button @click="count++">Increment</button>
+            <button @click="count--">Decrement</button>
+        </div>
+        <div class="counter" x-data="{ count: 0 }">
+            <p x-text="count"></p>
+            <button @click="count++">Increment</button>
+            <button @click="count--">Decrement</button>
+        </div>
+        <div class="counter" x-data="{ count: 0 }">
+            <p x-text="count"></p>
+            <button @click="count++">Increment</button>
+            <button @click="count--">Decrement</button>
+        </div>
+        <div class="counter" x-data="{ count: 0 }">
+            <p x-text="count"></p>
+            <button @click="count++">Increment</button>
+            <button @click="count--">Decrement</button>
+        </div>
+    </div>
+
+</body>
+</html>
